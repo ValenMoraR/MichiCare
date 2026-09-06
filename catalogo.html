@@ -28,31 +28,17 @@
 
             <ul class="nav-menu" id="nav-menu">
 
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="catalogo.html">Catálogo</a>
-                </li>
-
-                <li>
-                    <a href="cuidados.html">Cuidados</a>
-                </li>
-
-                <li>
-                    <a href="contacto.html">Contáctanos</a>
-                </li>
-
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cuidados.html">Cuidados</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
             </ul>
 
         </nav>
 
     </header>
 
-
     <main>
-
         <!-- ENCABEZADO DEL CATÁLOGO -->
         <section class="page-header">
 
@@ -67,56 +53,30 @@
 
         </section>
 
-
         <!-- CATÁLOGO -->
         <section class="section">
+            <!-- BUSCADOR -->
+            <div class="catalog-search">
+                <label for="search-input">Buscar producto</label>
+                <input type="search" id="search-input" placeholder="Busca un producto...">
+            </div>
 
+            <!-- FILTROS el filter-button active es el que permite ponerle css y ek data-category permite mannupilar los filtros -->
             <div class="catalog-filters">
-
-                <button
-                    class="filter-button active"
-                    data-category="todos"
-                >
-                    Todos
-                </button>
-
-                <button
-                    class="filter-button"
-                    data-category="alimentacion"
-                >
-                    Alimentación
-                </button>
-
-                <button
-                    class="filter-button"
-                    data-category="juguetes"
-                >
-                    Juguetes
-                </button>
-
-                <button
-                    class="filter-button"
-                    data-category="higiene"
-                >
-                    Higiene
-                </button>
-
-                <button
-                    class="filter-button"
-                    data-category="descanso"
-                >
-                    Descanso
-                </button>
-
+                <button class="filter-button active"data-category="todos">Todos</button>
+                <button class="filter-button" data-category="alimentacion">Alimentacion</button>
+                <button class="filter-button" data-category="juguetes">Juguetes</button>
+                <button class="filter-button" data-category="higiene">Higiene</button>
+                <button class="filter-button" data-category="descanso">Descanso</button>
             </div>
 
 
             <!-- JavaScript genera los productos aquí -->
-            <div
-                id="products-container"
-                class="products-grid"
-            >
-            </div>
+            <section class="section">
+                <div
+                    id="lista-productos" class="products-grid">
+                </div>
+            </section>
 
         </section>
 
@@ -166,5 +126,6 @@
 
         </div>
     </footer>
+    <script src= "app.js"></script> //esto importa la app
 </body>
 </html>
