@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="MichiCare, productos y consejos para el cuidado de tu gato.">
-
     <title>MichiCare | Inicio</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -18,13 +15,19 @@
         <nav class="navbar">
             <a href="index.html" class="logo">🐾 MichiCare</a>
 
-            <button class="menu-button" id="menu-button">☰</button>
+            <button 
+                class="menu-button" 
+                id="menu-button" 
+                aria-label="Abrir menú de navegación" 
+                aria-expanded="false">
+                    ☰
+            </button>
 
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="cuidados.html">Cuidados</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="pages/catalogo.html">Catálogo</a></li>
+                <li><a href="pages/cuidados.html">Cuidados</a></li>
+                <li><a href="pages/contacto.html">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
@@ -34,114 +37,73 @@
 
             <div class="hero-content">
 
-                <p class="hero-subtitle">
-                    Bienvenido a MichiCare
-                </p>
-
-                <h1>
-                    Todo lo que tu michi necesita para estar feliz
-                </h1>
-
+                <p class="hero-subtitle">Bienvenido a MichiCare</p>
+                <h1>Todo lo que tu michi necesita para estar feliz</h1>
                 <p>
                     Encuentra productos para consentir a tu gato y
                     consejos para cuidar de él todos los días.
                 </p>
-
-                <a href="catalogo.html" class="button">
-                    Ver catálogo
-                </a>
+                <a href="pages/catalogo.html" class="button">Ver catálogo</a>
 
             </div>
 
             <div class="hero-image">
-                <img src="images/gato-hero.jpg" alt="Gato descansando">
+                <img src="images/gato-descansando.png" alt="Gato descansando">
             </div>
 
         </section>
 
-
         <!-- PRESENTACIÓN -->
         <section class="section">
 
-            <h2>
-                Todo para tu michi en un solo lugar
-            </h2>
-
+            <h2>Todo para tu michi en un solo lugar</h2>
             <p class="section-intro">
                 En MichiCare encontrarás productos, recomendaciones
                 y consejos pensados para el bienestar de tu gato.
             </p>
 
-
             <div class="categories-grid">
-
                 <article class="category-card">
                     <div class="category-icon">🍗</div>
-
                     <h3>Alimentación</h3>
-
                     <p>
                         Productos y opciones para una alimentación
                         adecuada para tu gato.
                     </p>
-
-                    <a href="catalogo.html">
-                        Ver productos
-                    </a>
+                    <a href="pages/catalogo.html">Ver productos</a>
                 </article>
-
 
                 <article class="category-card">
                     <div class="category-icon">🧶</div>
-
                     <h3>Juguetes</h3>
-
                     <p>
                         Opciones para mantener a tu michi activo,
                         entretenido y feliz.
                     </p>
-
-                    <a href="catalogo.html">
-                        Ver productos
-                    </a>
+                    <a href="pages/catalogo.html">Ver productos</a>
                 </article>
-
 
                 <article class="category-card">
                     <div class="category-icon">🧼</div>
-
                     <h3>Higiene</h3>
-
                     <p>
                         Productos para mantener limpio y saludable
                         a tu compañero.
                     </p>
-
-                    <a href="catalogo.html">
-                        Ver productos
-                    </a>
+                    <a href="pages/catalogo.html">Ver productos</a>
                 </article>
-
 
                 <article class="category-card">
                     <div class="category-icon">🛏️</div>
-
                     <h3>Descanso</h3>
-
                     <p>
                         Todo lo necesario para que tu gato tenga
                         un espacio cómodo para descansar.
                     </p>
-
-                    <a href="catalogo.html">
-                        Ver productos
-                    </a>
+                    <a href="pages/catalogo.html">Ver productos</a>
                 </article>
-
             </div>
-
         </section>
-
 
         <!-- ADELANTO DEL CATÁLOGO -->
         <section class="section-products">
@@ -151,7 +113,7 @@
 
             <div class="products-preview">
                 <article class="product-card">
-                    <img src="images/alimento.jpg" alt="Alimento premium para gatos">
+                    <img src="images/comida-premium.png" alt="Alimento premium para gatos">
                     <div class="product-info">
                         <span class="product-category">Alimentación</span>
                         <h3>Alimento Premium</h3>
@@ -161,7 +123,7 @@
                 </article>
 
                 <article class="product-card">
-                    <img src="images/juguete.jpg" alt="Ratón de tela para gatos">
+                    <img src="images/ratones-tela.png" alt="Ratón de tela para gatos">
                     <div class="product-info">
                         <span class="product-category">Juguetes</span>
                         <h3>Ratón de Tela</h3>
@@ -172,7 +134,7 @@
 
                 <article class="product-card">
 
-                    <img src="images/rascador.jpg" alt="Rascador para gatos">
+                    <img src="images/rascador-de-carton.png" alt="Rascador para gatos">
                     <div class="product-info">
                         <span class="product-category">Juguetes</span>
                         <h3>Rascador para Gatos</h3>
@@ -184,156 +146,86 @@
 
 
             <div class="center-button">
-                <a href="catalogo.html" class="button">Ver catálogo completo</a>
+                <a href="pages/catalogo.html" class="button">Ver catálogo completo</a>
             </div>
         </section>
 
         <!-- ADELANTO DE CUIDADOS -->
         <section class="section">
-
-            <h2>
-                Aprende a cuidar mejor a tu michi
-            </h2>
-
+            <h2>Aprende a cuidar mejor a tu michi</h2>
             <p class="section-intro">
                 No solo queremos ayudarte a encontrar productos.
                 También queremos ayudarte a conocer mejor a tu gato.
             </p>
 
-
             <div class="care-preview">
-
                 <article class="care-card">
-
                     <div class="care-icon">🍗</div>
-
-                    <h3>
-                        Alimentación
-                    </h3>
-
+                    <h3>Alimentación</h3>
                     <p>
                         Aprende algunos aspectos importantes sobre
                         la alimentación de tu gato.
                     </p>
-
                 </article>
 
-
                 <article class="care-card">
-
                     <div class="care-icon">🧼</div>
-
-                    <h3>
-                        Higiene
-                    </h3>
-
+                    <h3>Higiene</h3>
                     <p>
                         Conoce algunos consejos para mantener
                         a tu michi limpio.
                     </p>
-
                 </article>
 
-
                 <article class="care-card">
-
                     <div class="care-icon">❤️</div>
-
-                    <h3>
-                        Bienestar
-                    </h3>
-
+                    <h3>Bienestar</h3>
                     <p>
                         Descubre cómo ayudar a tu gato a tener
                         una vida más feliz.
                     </p>
-
                 </article>
-
             </div>
 
-
             <div class="center-button">
-
-                <a href="cuidados.html" class="button">
-                    Ver consejos de cuidado
-                </a>
-
+                <a href="pages/cuidados.html" class="button">Ver consejos de cuidado</a>
             </div>
 
         </section>
-
 
         <!-- CONTACTO -->
         <section class="contact-preview">
 
             <div>
-
                 <h2>¿Tienes alguna pregunta</h2>
                 <p>Si necesitas más información sobre nuestros productos o servicios, puedes comunicarte con nosotros.</p>
-                <a href="contacto.html" class="button button-light">Contáctanos</a>
+                <a href="pages/contacto.html" class="button button-light">Contáctanos</a>
             </div>
-
         </section>
 
     </main>
 
-
     <!-- FOOTER -->
     <footer class="footer">
-
         <div class="footer-content">
-
             <div>
                 <h3>🐾 MichiCare</h3>
-
-                <p>
-                    Cuidamos a quienes hacen de nuestra casa
-                    un hogar.
+                <p>Cuidamos a quienes hacen de nuestra casa un hogar.
                 </p>
             </div>
 
-
             <div>
-
                 <h3>Enlaces</h3>
-
                 <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-
-                    <li>
-                        <a href="catalogo.html">Catálogo</a>
-                    </li>
-
-                    <li>
-                        <a href="cuidados.html">Cuidados</a>
-                    </li>
-
-                    <li>
-                        <a href="contacto.html">Contáctanos</a>
-                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/catalogo.html">Catálogo</a></li>
+                    <li><a href="pages/cuidados.html">Cuidados</a></li>
+                    <li><a href="pages/contacto.html">Contáctanos</a></li>
                 </ul>
-
             </div>
-
-
-            <div>
-
-                <h3>Síguenos</h3>
-
-                <p>
-                    Instagram · Facebook
-                </p>
-
-            </div>
-
         </div>
 
-
     </footer>
-    <script src= "app.js"></script> //esto importa la app
-
+    <script src= "js/main.js"></script> 
 </body>
 </html>
