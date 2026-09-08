@@ -118,6 +118,59 @@ ul {
     color: var(--color-primary);
 }
 
+/* =========================
+   MENÚ SUPERIOR
+========================= */
+
+.top-menu {
+    background-color:var(--color-primary);
+    width: 100%;
+}
+
+.top-menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 35px;
+    padding: 10px 20px;
+}
+
+.top-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.top-menu-link:hover {
+    opacity: 0.7;
+}
+
+.top-icon {
+    font-size: 21px;
+}
+
+.contador {
+    background-color: white;
+    color: #555;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -4px;
+}
+
+
+
 
 /* BOTÓN MENÚ MÓVIL */
 
@@ -805,6 +858,28 @@ ul {
         display: block;
         padding: 15px;
     }
+
+    
+    .top-menu-content {
+        justify-content: center;
+        gap: 15px;
+        padding: 8px 10px;
+    }
+
+    .top-menu-link {
+        font-size: 13px;
+    }
+
+    .top-icon {
+        font-size: 17px;
+    }
+
+    .contador {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
+
 
 
     /* HERO */
